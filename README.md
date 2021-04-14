@@ -5,10 +5,13 @@ Code:
 - [`find_jpg_txt_pairs_delete_missing.py`](https://github.com/oskarforssell/ai_project/new/master?readme=1#find_jpg_txt_pairs_delete_missingpy)  
 - [`img_and_txt_flip.py`](https://github.com/oskarforssell/ai_project/new/master?readme=1#img_and_txt_flippy)
 
+--- 
 #### `darknet_script.sh`
 A script created to run darknet training 3 times, each time saving  
 a timestamped log.txt file and a timestamped mAP chart.png  
 Also the `final.weights` and `best.weights`of each run are saved.
+
+---
 
 #### `find_jpg_txt_pairs_delete_missing.py` 
 Use to make sure all images have a annotated .txt file.
@@ -23,6 +26,8 @@ Then check that there is a .jpg and .txt file with the same name.
 If there **aren't** any missing pairs the output will tell you how many files you have.  
 If there **are** missing pairs the output will print out the missing files and give  
 an option to delete the **single/pairless** files.
+
+---
 
 #### `img_and_txt_flip.py`
 Dependencies: requires **PIL**, to install: 
