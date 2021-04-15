@@ -4,6 +4,8 @@ Code:
 - [`darknet_script.sh`](https://github.com/oskarforssell/ai_project/new/master?readme=1#darknet_scriptsh)
 - [`find_jpg_txt_pairs_delete_missing.py`](https://github.com/oskarforssell/ai_project/new/master?readme=1#find_jpg_txt_pairs_delete_missingpy)  
 - [`img_and_txt_flip.py`](https://github.com/oskarforssell/ai_project/new/master?readme=1#img_and_txt_flippy)
+- [`chg_img_type.py`](https://github.com/oskarforssell/ai_project/new/master?readme=1#chg_img_typepy)
+
 
 --- 
 #### `darknet_script.sh`
@@ -48,3 +50,15 @@ The annotated .txt file need to be in the following format:
     1 0.716797 0.395833 0.216406 0.147222
     0 0.687109 0.379167 0.255469 0.158333
     1 0.420312 0.395833 0.140625 0.166667
+
+---
+
+#### `chg_img_type.py`
+
+Cmd syntax
+[python3] [program.py] [source_folder/]    
+`python3 chg_img_type.py folder/`
+
+> source_folder can be blank or '.' (period)
+
+Modify file extension from .jpeg or .JPEG to .jpg
