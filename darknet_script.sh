@@ -33,7 +33,7 @@ do
   # Sleep for 2 seconds (in case there is a small hiccup with creating graph.png)
   sleep 2
   # Move & rename graph.png to specified folder
-  mv graph.png ${dest}/${foldername}/graph${file_ext}.png
+  mv chart.png ${dest}/${foldername}/chart${file_ext}.png
 
   # Copy the final and best weights from [backup] to weights-backup folder
   cp ${dest}/backup/yolov3-nai20sp_final.weights ${dest}/${weights_folder}/yolov3-nai20sp_final${file_ext}.weights
