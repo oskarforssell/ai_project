@@ -1,11 +1,11 @@
 # AI Project - Machine vision
 
 Code:  
-- [`darknet_script.sh`](https://github.com/oskarforssell/ai_project#darknet_scriptsh)
-- [`darknet_train_test.sh`](https://github.com/oskarforssell/ai_project#darknet_train_testsh)
-- [`find_jpg_txt_pairs_delete_missing.py`](https://github.com/oskarforssell/ai_project#find_jpg_txt_pairs_delete_missingpy)  
-- [`img_and_txt_flip.py`](https://github.com/oskarforssell/ai_project#img_and_txt_flippy)
-- [`chg_img_type.py`](https://github.com/oskarforssell/ai_project#chg_img_typepy)
+- [`darknet_script.sh`](https://github.com/oskarforssell/ai_project#darknet_scriptsh-code)
+- [`darknet_train_test.sh`](https://github.com/oskarforssell/ai_project#darknet_train_testsh-code)
+- [`find_jpg_txt_pairs_delete_missing.py`](https://github.com/oskarforssell/ai_project#find_jpg_txt_pairs_delete_missingpy-code)  
+- [`img_and_txt_flip.py`](https://github.com/oskarforssell/ai_project#img_and_txt_flippy-code)
+- [`chg_img_type.py`](https://github.com/oskarforssell/ai_project#chg_img_typepy-code)
 
 
 
