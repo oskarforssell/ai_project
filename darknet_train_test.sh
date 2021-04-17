@@ -22,7 +22,7 @@ mkdir ${dest}/${foldername}
 echo "folder ${foldername} created"
 
 file_ext="${now_g}"
-echo ${file_ext}
+echo ${file_ext} 
 
 # Run darknet training
 ./darknet detector train data/oskar_test_data/obj.data ${cfg_file} ../darknet53.conv.74 -map -dont_show 2>&1 > ${dest}/${foldername}/train_log${file_ext}.txt
