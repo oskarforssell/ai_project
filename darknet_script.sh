@@ -3,7 +3,7 @@
 # Training loop script By Oskar Forssell
 # Creates a timestamped folder [YEAR-MONTH-DAY-HOUR]
 # Run training 3 times
-# After eaach training: results exported to specified folder
+# After each training: results exported to specified folder
 
 # Relative directory to save results
 dest=data/oskar_test_data
