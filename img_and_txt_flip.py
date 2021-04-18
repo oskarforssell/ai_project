@@ -6,6 +6,8 @@
 # Dependences to install:
 #   pip install pillow
 
+### Cmd line syntax: [python3] [img_and_txt_flip.py] [source_folder/] [destination_folder/]
+
 from PIL import Image, ImageOps
 import glob
 import datetime
@@ -55,7 +57,12 @@ for txt_file in glob.iglob(txt_source, recursive=True):
         while line:
             #Split row and calculate '1-value' in 2nd column, also format to have 6 decimals
             unit = line.split(' ')
-            mirror_value_x_axis  = '{0:.6f}'.format(1 - float(unit[1]))
+            
+            try:
+                mirror_value_x_axis  = '{0:.6f}'.format(1 - float(unit[1]))
+            except: 
+                print(f"An error occured with file: {txt_file}")
+                break
             
             #Replace x-axis coordinate with new value and merge units into one string
             unit[1] = mirror_value_x_axis
@@ -71,7 +78,6 @@ for txt_file in glob.iglob(txt_source, recursive=True):
 end_time = datetime.datetime.now().replace(microsecond=0)
 print(f"Process completed in {end_time-start_time} [h:m:s]")
 print(f"Created {img_counter} mirror images and {txt_counter} txt files")
-
 
 # Caution!
 # If annotated .txt file aready exists as a _mirror.txt version and this code is run,
