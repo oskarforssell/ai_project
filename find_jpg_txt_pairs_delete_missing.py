@@ -14,6 +14,7 @@ jpg_list = []
 txt_list = []
 jpg_missing_txt_pair = []
 txt_missing_jpg_pair = []
+classes_txt_delisted = False
 
 for txt_file in glob.iglob(txt_source, recursive=True):
     split_txt = txt_file.split('.')
@@ -35,6 +36,10 @@ for jpg_file in glob.iglob(img_source, recursive=True):
     
 for single_txt in txt_list:
     if single_txt in jpg_list:
+        pass
+    elif single_txt == "classes":
+        txt_list.remove("classes")
+        classes_txt_delisted = True
         pass
     else: txt_missing_jpg_pair.append(single_txt)
 
@@ -86,7 +91,10 @@ if len(jpg_missing_txt_pair) > 0 or len(txt_missing_jpg_pair) > 0:
     delete_file()
 
 else: print("No missing pairs found, you have:")
-print(f"{len(txt_list)} txt files\n{len(jpg_list)} jpg images")
+if classes_txt_delisted == False:
+    print(f"{len(txt_list)} txt files  !!! CAUTION your classes.txt file is missing!\n{len(jpg_list)} jpg images")
+else: print(f"{len(txt_list)} txt files + 1 (classes.txt)\n{len(jpg_list)} jpg images")
+    
 
 ## This code checks first for .jpg images, then if there is a .txt counterpart.
 ## If NO .txt counterpart found it is added to the "missing_pair"-list.
