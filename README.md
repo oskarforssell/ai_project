@@ -1,22 +1,30 @@
 # AI Project - Machine vision
 
+Link to [server settings](https://github.com/jjrbfi/CSC_server_config)  
+
 Code:  
-- [`darknet_script.sh`](https://github.com/oskarforssell/ai_project/new/master/README.md#darknet_scriptsh)
-- [`find_jpg_txt_pairs_delete_missing.py`](https://github.com/oskarforssell/ai_project/new/master/README.md#find_jpg_txt_pairs_delete_missingpy)  
-- [`img_and_txt_flip.py`](https://github.com/oskarforssell/ai_project/new/master/README.md#img_and_txt_flippy)
-- [`chg_img_type.py`](https://github.com/oskarforssell/ai_project/blob/master/README.md#chg_img_typepy)
+- [`darknet_script.sh`](https://github.com/oskarforssell/ai_project#darknet_scriptsh-code)
+- [`darknet_train_test.sh`](https://github.com/oskarforssell/ai_project#darknet_train_testsh-code)
+- [`find_jpg_txt_pairs_delete_missing.py`](https://github.com/oskarforssell/ai_project#find_jpg_txt_pairs_delete_missingpy-code)  
+- [`img_and_txt_flip.py`](https://github.com/oskarforssell/ai_project#img_and_txt_flippy-code)
+- [`chg_img_type.py`](https://github.com/oskarforssell/ai_project#chg_img_typepy-code)
 
 
 
 --- 
-#### `darknet_script.sh`
+#### `darknet_script.sh` [`code`](https://github.com/oskarforssell/ai_project/blob/master/darknet_script.sh)  
 A script created to run darknet training 3 times, each time saving  
 a timestamped log.txt file and a timestamped mAP chart.png  
-Also the `final.weights` and `best.weights`of each run are saved.
+Also the `_final.weights` and `_best.weights`of each run are saved.
 
 ---
+#### `darknet_train_test.sh` [code](https://github.com/oskarforssell/ai_project/blob/master/darknet_train_test.sh)  
+A script created to run darknet training **once**, then run a test.
+Both training and test results are exported to a .txt log.
+Also the `_final.weights`, `_best.weights` and `_last.weights` are saved in a separate location.
 
-#### `find_jpg_txt_pairs_delete_missing.py` 
+---
+#### `find_jpg_txt_pairs_delete_missing.py` [code](https://github.com/oskarforssell/ai_project/blob/master/find_jpg_txt_pairs_delete_missing.py)  
 Use to make sure all images have a annotated .txt file.
 
 Cmd line syntax  
@@ -32,7 +40,7 @@ an option to delete the **single/pairless** files.
 
 ---
 
-#### `img_and_txt_flip.py`
+#### `img_and_txt_flip.py` [code](https://github.com/oskarforssell/ai_project/blob/master/img_and_txt_flip.py)
 Dependencies: requires **PIL**, to install: 
 > pip install pillow  
 
@@ -54,7 +62,7 @@ The annotated .txt file need to be in the following format:
 
 ---
 
-#### `chg_img_type.py`
+#### `chg_img_type.py` [code](https://github.com/oskarforssell/ai_project/blob/master/chg_img_type.py)
 
 Cmd syntax
 [python3] [program.py] [source_folder/]    
