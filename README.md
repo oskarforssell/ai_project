@@ -1,6 +1,6 @@
 # AI Project - Machine vision
 
-Link to Jaime's [server settings](https://github.com/jjrbfi/CSC_server_config).  
+Link to [server settings](https://github.com/jjrbfi/CSC_server_config)  
 
 Code:  
 - [`darknet_script.sh`](https://github.com/oskarforssell/ai_project#darknet_scriptsh-code)
@@ -12,7 +12,7 @@ Code:
 
 
 --- 
-#### `darknet_script.sh` [code](https://github.com/oskarforssell/ai_project/blob/master/darknet_script.sh)  
+#### `darknet_script.sh` [`code`](https://github.com/oskarforssell/ai_project/blob/master/darknet_script.sh)  
 A script created to run darknet training 3 times, each time saving  
 a timestamped log.txt file and a timestamped mAP chart.png  
 Also the `_final.weights` and `_best.weights`of each run are saved.
