@@ -1,6 +1,6 @@
 # AI Project - Machine vision
 
-Link to [server settings](https://github.com/jjrbfi/CSC_server_config)
+Link to Jaime's [server settings](https://github.com/jjrbfi/CSC_server_config).  
 
 Code:  
 - [`darknet_script.sh`](https://github.com/oskarforssell/ai_project#darknet_scriptsh-code)
