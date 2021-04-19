@@ -1,7 +1,5 @@
 # AI Project - Machine vision
 
-Link to [server settings](https://github.com/jjrbfi/CSC_server_config)  
-
 Code:  
 - [`darknet_script.sh`](https://github.com/oskarforssell/ai_project#darknet_scriptsh-code)
 - [`darknet_train_test.sh`](https://github.com/oskarforssell/ai_project#darknet_train_testsh-code)
@@ -9,7 +7,7 @@ Code:
 - [`img_and_txt_flip.py`](https://github.com/oskarforssell/ai_project#img_and_txt_flippy-code)
 - [`chg_img_type.py`](https://github.com/oskarforssell/ai_project#chg_img_typepy-code)
 
-
+Link to [server settings](https://github.com/jjrbfi/CSC_server_config)
 
 --- 
 #### `darknet_script.sh` [`code`](https://github.com/oskarforssell/ai_project/blob/master/darknet_script.sh)  
@@ -43,7 +41,7 @@ If `classes.txt` is will be indicated in the result output.
 
 ---
 #### `img_and_txt_flip.py` [code](https://github.com/oskarforssell/ai_project/blob/master/img_and_txt_flip.py)
-Dependencies: requires **PIL**, to install: 
+Dependencies: requires **PIL**, to install:  
 > pip install pillow  
 
 Cmd line syntax  
