@@ -60,8 +60,8 @@ for txt_file in glob.iglob(txt_source, recursive=True):
             
             try:
                 mirror_value_x_axis  = '{0:.6f}'.format(1 - float(unit[1]))
-            except: 
-                print(f"An error occured with file: {txt_file}")
+            except IndexError as e: 
+                print(f"An '{e}' error has occured with file: {txt_file}")
                 break
             
             #Replace x-axis coordinate with new value and merge units into one string
